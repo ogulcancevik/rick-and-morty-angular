@@ -1,0 +1,5 @@
+  <select class="bg-white text-black outline-none rounded-md p-2" [(ngModel)]="selectedPage" (change)="changePage()">
+    <option  *ngFor="let page of pagesArray" [value]="page">
+      {{ page + 1 }}
+    </option>
+  </select>

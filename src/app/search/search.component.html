@@ -1,0 +1,15 @@
+<div class="flex gap-2 items-center">
+  <input
+    type="text"
+    placeholder="Search character"
+    class="border-2 border-gray-300 p-2 rounded-md outline-none text-black border-none"
+    [(ngModel)]="name"
+    (keydown.enter)="search()"
+  />
+  <button
+    class="bg-[#3b3e43] text-white p-2 rounded-md border border-transparent hover:bg-transparent hover:border-white transition-all"
+    (click)="search()"
+  >
+    Search
+  </button>
+</div>

@@ -1,0 +1,15 @@
+<div
+  class="flex flex-col m-5 p-5 gap-2 bg-[#3b3e43] text-white rounded-md w-72"
+>
+  <img [src]="result.image" [alt]="result.name" class="rounded-lg" />
+  <div class="flex flex-col gap-1 items-center">
+    <span class="font-bold">{{ result.name }}</span>
+    <span>
+      <span
+        class="inline-block h-2 w-2 rounded-full mr-1.5"
+        [ngClass]="dotClass(result.status)"
+      ></span>
+      {{ result.status }} - {{ result.species }}
+    </span>
+  </div>
+</div>
